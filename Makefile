@@ -9,7 +9,7 @@ WWW=		https://talksy.ru/landing
 USE_GITUB=	yes
 GH_ACCOUNT=	CyberKoalaStudios
 GH_PROJECT=	talksy-port
-GH_TAGNAME=	e40ef8f
+GH_TAGNAME=	34e4543
 
 WRKSRC=	${WRKDIR}/${PORTNAME}-${DISTVERSION}
 
