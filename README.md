@@ -2,6 +2,22 @@
 
 Talksy Desktop FreeBSD port
 
+![](https://github.com/CyberKoalaStudios/talksy-port/releases/download/0.0.31/talksy_kde_Screenshot_20250326_023921.png)
+
+## Installation
+
+Go to [Releases](https://github.com/CyberKoalaStudios/talksy-port/releases/) and get latest **talksy-X.X.XX.pkg**
+
+To install simply download pkg and run:
+
+```sh
+pkg add talksy-X.X.XX.pkg
+```
+
+Where _X.X.XX_ - port version
+
+
+## Building from SRC (optional)
 To build yourself:
 ```sh
 make clean && make makesum && make stage
