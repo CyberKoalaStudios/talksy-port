@@ -2,7 +2,7 @@
 
 Talksy Desktop FreeBSD port
 
-![](https://github.com/CyberKoalaStudios/talksy-port/releases/download/0.0.31/talksy_kde_Screenshot_20250326_023921.png)
+![https://talksy.ru/landing](https://github.com/CyberKoalaStudios/talksy-port/releases/download/0.0.31/talksy_kde_Screenshot_20250326_023921.png)
 
 ## Installation
 
