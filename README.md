@@ -1,6 +1,9 @@
 # talksy-port
 
+![](https://avatars.githubusercontent.com/u/169930036?s=200&v=4)
+
 Talksy Desktop FreeBSD port
+
 
 ![https://talksy.ru/landing](https://github.com/CyberKoalaStudios/talksy-port/releases/download/0.0.31/talksy_kde_Screenshot_20250326_023921.png)
 
