@@ -1,5 +1,5 @@
 PORTNAME=	talksy
-PORTVERSION=	0.0.31
+PORTVERSION=	0.0.32
 CATEGORIES=	net-im
 
 MAINTAINER=	contact@cyberkoalastudios.com
