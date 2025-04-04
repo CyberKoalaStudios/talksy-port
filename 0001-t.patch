@@ -1,0 +1,73 @@
+From 45b924e372968cb76910266cbc1266ab3617fe8f Mon Sep 17 00:00:00 2001
+From: rhiskey <first3395@gmail.com>
+Date: Fri, 4 Apr 2025 10:24:35 +0300
+Subject: [PATCH] t
+
+---
+ Makefile  | 18 ++++++++----------
+ pkg-descr | 12 ++----------
+ 2 files changed, 10 insertions(+), 20 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index f142dc0..8f11564 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,30 +1,28 @@
+ PORTNAME=	talksy
+ PORTVERSION=	0.0.32
+ CATEGORIES=	net-im
++MASTER_SITES=	GH
+ 
+ MAINTAINER=	contact@cyberkoalastudios.com
+ COMMENT=	Video calling app
+ WWW=		https://talksy.ru/landing
+ 
+-USE_GITUB=	yes
+-GH_ACCOUNT=	CyberKoalaStudios
+-GH_PROJECT=	talksy-port
+-GH_TAGNAME=	487af5e
+-
+-WRKSRC=	${WRKDIR}/${PORTNAME}-${DISTVERSION}
+-
+ LICENSE=	AGPLv3
+ 
+ USES=		cmake compiler:c++17-lang gl pkgconfig xorg
+ USES+=		qt:6
+ USE_GL=		glu
+ USE_QT=		base svg webengine webview
++USE_XORG=	x11 xcb xext xorgproto
++USE_GITUB=	yes
+ 
++GH_ACCOUNT=	CyberKoalaStudios
++GH_PROJECT=	talksy-port
++GH_TAGNAME=	487af5e
+ 
+-USE_XORG=	x11 xcb xext xorgproto
++WRKSRC=	${WRKDIR}/${PORTNAME}-${DISTVERSION}
+ 
+ CMAKE_ARGS=	-DCMAKE_INSTALL_PREFIX=${PREFIX} \
+ 			-DCMAKE_BUILD_TYPE=Release \
+-			-DQT_VERSION_MAJOR=6 
+-		 
++			-DQT_VERSION_MAJOR=6
+ .include <bsd.port.mk>
+diff --git a/pkg-descr b/pkg-descr
+index c41df56..80ee274 100644
+--- a/pkg-descr
++++ b/pkg-descr
+@@ -1,10 +1,2 @@
+-The modern video conferencing for Remote Teams The easiest way to call a meeting in seconds.
+-
+-It features:
+-- Video calls
+-- Seamless voice channels across devices
+-- Live chats
+-- Custom servers
+-- Screen sharing
+-
+-WWW: https://talksy.ru/landing
++The modern video conferencing for remote teams.
++The easiest way to call a meeting in seconds.
+-- 
+2.49.0
+
