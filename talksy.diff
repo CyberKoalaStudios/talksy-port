@@ -1,0 +1,49 @@
+From 083c724d6acb25f743b09b1e1ea3089815fa7889 Mon Sep 17 00:00:00 2001
+From: rhiskey <first3395@gmail.com>
+Date: Fri, 4 Apr 2025 10:46:44 +0300
+Subject: [PATCH] Makefile f `:q`
+
+---
+ README.md | 19 ++++++++++++++++---
+ 1 file changed, 16 insertions(+), 3 deletions(-)
+
+diff --git a/README.md b/README.md
+index d6c14cc..4f7f67f 100644
+--- a/README.md
++++ b/README.md
+@@ -14,7 +14,7 @@ Go to [Releases](https://github.com/CyberKoalaStudios/talksy-port/releases/) and
+ To install simply download pkg and run:
+ 
+ ```sh
+-pkg add talksy-X.X.XX.pkg
++# pkg add talksy-X.X.XX.pkg
+ ```
+ 
+ Where _X.X.XX_ - port version
+@@ -28,8 +28,21 @@ make clean && make makesum && make stage
+ make install
+ make package # creates /work/pkg/talksy-X.X.X.pkg
+ 
+-pkg add /work/pkg/talksy-X.X.X.pkg # to install
+-pkg info talksy # To viev package info
++# pkg add ./work/pkg/talksy-X.X.X.pkg # to install
++# pkg info talksy # To viev package info
+ ```
+ 
+ Check plist: `make check-plist`
++
++# Submitting to Ports
++
++```
++# cp /talksy-port/distinfo /usr/ports/net-im/talksy
++# cp /talksy-port/LICENSE /usr/ports/net-im/talksy
++# cp /talksy-port/Makefile /usr/ports/net-im/talksy
++# cp /talksy-port/pkg-descr /usr/ports/net-im/talksy
++# cp /talksy-port/pkg-list /usr/ports/net-im/talksy
++# cp /talksy-port/pkg-plist /usr/ports/net-im/talksy
++
++git add .
++``
+-- 
+2.49.0
+

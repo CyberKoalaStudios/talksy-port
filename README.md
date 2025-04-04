@@ -44,5 +44,12 @@ Check plist: `make check-plist`
 # cp /talksy-port/pkg-list /usr/ports/net-im/talksy
 # cp /talksy-port/pkg-plist /usr/ports/net-im/talksy
 
-git add .
+% git add .
+% git diff --staged
+% git commit
+% git format-patch origin/main
+
+% git format-patch origin/main --stdout > talksy.diff
+
 ``
+https://docs.freebsd.org/en/books/porters-handbook/quick-porting/
