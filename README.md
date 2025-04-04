@@ -14,7 +14,7 @@ Go to [Releases](https://github.com/CyberKoalaStudios/talksy-port/releases/) and
 To install simply download pkg and run:
 
 ```sh
-pkg add talksy-X.X.XX.pkg
+# pkg add talksy-X.X.XX.pkg
 ```
 
 Where _X.X.XX_ - port version
@@ -28,8 +28,21 @@ make clean && make makesum && make stage
 make install
 make package # creates /work/pkg/talksy-X.X.X.pkg
 
-pkg add /work/pkg/talksy-X.X.X.pkg # to install
-pkg info talksy # To viev package info
+# pkg add ./work/pkg/talksy-X.X.X.pkg # to install
+# pkg info talksy # To viev package info
 ```
 
 Check plist: `make check-plist`
+
+# Submitting to Ports
+
+```
+# cp /talksy-port/distinfo /usr/ports/net-im/talksy
+# cp /talksy-port/LICENSE /usr/ports/net-im/talksy
+# cp /talksy-port/Makefile /usr/ports/net-im/talksy
+# cp /talksy-port/pkg-descr /usr/ports/net-im/talksy
+# cp /talksy-port/pkg-list /usr/ports/net-im/talksy
+# cp /talksy-port/pkg-plist /usr/ports/net-im/talksy
+
+git add .
+``
